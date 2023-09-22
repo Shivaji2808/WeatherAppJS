@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222;
+
+}
+
+.card{
+    width: 90%;
+    max-width: 980px;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    color: white;
+    margin: 35px auto 0;
+    border-radius: 70px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    margin-right: 16px;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 550px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.search button img{
+    width: 16px;
+}
+
+.weathercont{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400px;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+    
+}
+
+.humidity, .wind, .pm2, .air{
+    font-size: 20px;
+    margin-top: -6px;
+}
+
+.col p{
+    font-size: 22px;
+    font-weight: 600;
+}    
+
+.blk{
+    filter: invert();
+    width: 40px;
+    margin-right: 10px;
+} 
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+.extcol{
+    display: flex;
+    margin-top: 35px;
+}
+
+.extcol p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.extcol img{
+    width: 45px;
+    margin-right: 14px;
+}
+
+
+
+
+
+/* Mobile devices (up to 768px) */
+@media screen and (max-width: 768px) {
+    .card {
+      padding: 20px 15px; /* Adjust padding for smaller screens */
+
+    }
+  
+    .search input {
+      width: 60%; /* Full width for input on smaller screens */
+      margin-top: 18px;
+      margin-right: 0;
+    }
+  
+    .search button {
+      margin-left: 10px;
+      margin-top: 18px; /* Add some space between input and button */
+    }
+
+    .weather-icon{
+        width: 120px;
+        margin-top: 10px;
+    }
+  
+    .weather h1 {
+      font-size: 50px; /* Reduce font size for temperature on smaller screens */
+    }
+  
+    .weather h2 {
+      font-size: 35px; /* Reduce font size for city name on smaller screens */
+    }
+  
+    .details {
+       /* Stack details vertically on smaller screens */
+      margin-top: 20px;
+      flex-wrap: wrap;
+      /* Adjust top margin for details */
+    }
+  
+    .col {
+      margin-bottom: 20px; /* Add space between detail sections */
+      
+    }
+  
+    .col img {
+      width: 30px; /* Reduce icon size for smaller screens */
+    }
+  
+    .humidity,
+    .wind,
+    .pm2,
+    .air {
+      font-size: 18px; /* Reduce font size for details on smaller screens */
+      margin-top: -4px; /* Adjust top margin for details */
+    }
+  
+    .col p {
+      font-size: 16px; /* Reduce font size for detail titles on smaller screens */
+    }
+  
+    .blk {
+      width: 30px; /* Reduce icon size for smaller screens */
+    }
+  }
+
+
+  @media screen and (min-width: 769px) and (max-width: 925px) {
+    .card {
+      padding: 40px 25px; /* Adjust padding for tablets */
+      flex-direction: column; /* Display card content vertically */
+    }
+  
+    .search {
+      flex-direction: column; /* Display search vertically */
+    }
+  
+    .search input {
+      width: 100%; /* Full width for input on tablets */
+      margin: 0 0 10px; /* Add some space below the input */
+    }
+  
+    .search button {
+      margin: 0; /* Remove margin from the button */
+    }
+  
+    .weather h1 {
+      font-size: 60px; /* Reduce font size for temperature on tablets */
+    }
+  
+    .weather h2 {
+      font-size: 35px; /* Reduce font size for city name on tablets */
+    }
+  
+    .details {
+      margin-top: 20px; /* Adjust top margin for details */
+    }
+  
+    .col {
+      margin-bottom: 20px; /* Add space between detail sections */
+      display: flex;
+      align-items: center;
+    }
+  
+    .col img {
+      width: 20px; /* Reduce icon size for tablets */
+      margin-right: 10px; /* Add space between icon and text */
+    }
+  
+    .humidity,
+    .wind,
+    .pm2,
+    .air {
+      font-size: 16px; /* Reduce font size for details on tablets */
+      margin-top: -4px; /* Adjust top margin for details */
+      flex: 1; /* Equal width for two values in a row */
+    }
+  
+    .col p {
+      font-size: 18px; /* Reduce font size for detail titles on tablets */
+    }
+  
+    .blk {
+      width: 20px; /* Reduce icon size for tablets */
+    }
+  }

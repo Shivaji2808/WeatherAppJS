@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter City Name" spellcheck="false">
+            <button><img src="images/search.png" alt="Search"></button>
+        </div>
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+        <div class="weather">
+            <div class="weathercont">
+                <div class="weatherdet">
+                    <img src="images/rain.png" alt="Rain" class="weather-icon">
+                    <h1 class="temp">22°C</h1>
+                    <h2 class="city">New York</h2>
+                </div>
+                <div class="xtradet">
+                    <div class="extcol">
+                        <img class="blk" src="images/lat.png" alt="">
+                        <div>
+                            <p class="lat">50.0</p>
+                            <p>Latitude</p>
+                        </div>
+                    </div>
+                    <div class="extcol">
+                        <img class="blk" src="images/long.png" alt="">
+                        <div>
+                            <p class="lon">50.0</p>
+                            <p>Longitude</p>
+                        </div>
+                    </div>
+                    <div class="extcol">
+                        <img src="images/temphigh.png" alt="">
+                        <div>
+                            <p class="temphigh">25°C</p>
+                            <p>Temp_Max</p>
+                        </div>
+                    </div>
+                    <div class="extcol">
+                        <img src="images/templow.png" alt="">
+                        <div>
+                            <p class="templow">20°C</p>
+                            <p>Temp_Min</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="details">
+                <!-- Humidity -->
+                <div class="col">
+                    <img src="images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <!-- Wind -->
+                 <div class="col">
+                    <img src="images/wind.png" alt="">
+                    <div>
+                        <p class="wind">15 km/r</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+                <!-- air -->
+                <div class="col">
+                    <img class="blk" src="images/air.png" alt="">
+                    <div>
+                        <p class="air">200 ppm</p>
+                        <p>AQI</p>
+                    </div>
+                </div>
+                <!-- pm -->
+                <div class="col">
+                    <img class="blk" src="images/pm2.png" alt="">
+                    <div>
+                        <p class="pm2">10 µg/m3</p>
+                        <p>PM 2.5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
