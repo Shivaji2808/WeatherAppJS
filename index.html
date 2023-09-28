@@ -10,10 +10,10 @@
     <div class="card">
         <div class="search">
             <input type="text" placeholder="Enter City Name" spellcheck="false">
-            <button><img src="images/search.png" alt="Search"></button>
+            <button>Get Weather</button>
         </div>
         <div class="error">
-            <p>Invalid City Name</p>
+            <p>Invalid City Name...Please Enter Correct City Name</p>
         </div>
         <div class="weather">
             <div class="weathercont">
@@ -22,6 +22,14 @@
                     <h1 class="temp">22°C</h1>
                     <h2 class="city">New York</h2>
                 </div>
+
+                <div class="unit-selection">
+                    <select id="unit-toggle">
+                      <option value="metric">Celsius (°C)</option>
+                      <option value="imperial">Fahrenheit (°F)</option>
+                    </select>
+                </div> 
+
                 <div class="xtradet">
                     <div class="extcol">
                         <img class="blk" src="images/lat.png" alt="">
@@ -92,4 +100,5 @@
     </div>
 </body>
 <script src="index.js"></script>
+<script src="index2.js"></script>
 </html>
