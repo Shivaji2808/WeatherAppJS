@@ -173,13 +173,14 @@ body{
   
     .search input {
       width: 60%; /* Full width for input on smaller screens */
-      margin-top: 18px;
+      margin-top: 8px;
       margin-right: 0;
+      font-size: 16px;
     }
   
     .search button {
       margin-left: 10px;
-      margin-top: 18px; /* Add some space between input and button */
+      margin-top: 8px; /* Add some space between input and button */
     }
 
     .weather-icon{
@@ -225,6 +226,22 @@ body{
   
     .blk {
       width: 30px; /* Reduce icon size for smaller screens */
+    }
+
+    .xtradet{
+      margin: 15px 0px;
+    }
+
+    .extcol{
+      margin-top: 20px;
+    }
+
+    .extcol p{
+      font-size: 14px;
+    }
+
+    .extcol img{
+      width: 35px;
     }
   }
 

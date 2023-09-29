@@ -63,7 +63,7 @@ unitToggle.addEventListener("change", () => {
     document.querySelector(".weather").style.display = "block";
     document.querySelector(".error").style.display = "none";
     }
-    
+    s
     aqiparam(lat,lon);
 }
 
